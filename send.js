@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 // http://www.rabbitmq.com/tutorials/tutorial-one-javascript.html
 // use with receive.js
+// another comment
 
 var amqp = require("amqplib/callback_api");
 
