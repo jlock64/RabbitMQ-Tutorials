@@ -24,7 +24,8 @@ amqp.connect("amqp://localhost", function(err, conn) {
         ch.bindQueue(q.queue, ex, severity);
       });
 
-      ch.consume(q.queue, function(msg) {
+      ch.consume(
+        q.queue,function(msg) {
           console.log(" [x] %s: '%s'", msg.fields.routingKey, msg.content.toString());
         }, { noAck: true }
       );
